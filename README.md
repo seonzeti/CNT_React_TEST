@@ -1,21 +1,22 @@
-CNT_Web_TEST(최종 업데이트 2021/05/28)
+CNT_React_TEST(최종 업데이트 2021/06/01)
 ============
 
 ## 작업 방법
 
 ### 1. :fork_and_knife: 현재 repo 를 Fork!
 
-### 2. :hammer_and_wrench: component 2개를 만드세요 ( ComponentA, ComponentB )
+### 2. :computer: [링크된 사이트](https://cnt-web-test.herokuapp.com)를 보고 클론코딩
+> ReactJS + Scss 로 작업해주세요
 
-### 3. :computer: ComponentA 에서 Axios GET (URL : XXX) 으로 값을 가져오세요
+### 3. :iphone: 미디어 쿼리등을 활용하여 반응형 웹으로 제작(스마트폰, 태블릿, PC 3가지 버전)
+> 반복되는 컴포넌트 들은 외부 컴포넌트 로 반복처리 하세요(MAP, 리스트뷰 등 종류 자유)
 
-### 4. :floppy_disk: 3번에서 가져온 DATA를 상태관리 저장하세요(useState, Redux, Context, Recoil 종류 무관)
+### 4. :warning: 클론코딩한 화면 좌상단의 제목과 내용변경
+> [링크된 JSON](https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/) 의 값을 Axios 로 가져와서 집어넣는다.
 
-### 5. :iphone: ComponentB 에서, 값을 리스트뷰로 표시하세요(Item을 담는 TAG는 자유)
+### 5. :floppy_disk: 4번에서 가져온 DATA를 상태관리 저장하세요(useState, Redux, Context, Recoil 종류 무관)
 
-### 6. :warning: 5번에서 표시한 Items 중 클릭한 Item 을 삭제시키세요(상태관리 이용)
-
-### 7. :stopwatch: 작업이 완료되면 PR!
+### 6. :stopwatch: 작업이 완료되면 PR!
 
 ---
 
