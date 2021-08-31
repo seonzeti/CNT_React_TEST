@@ -28,8 +28,8 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 
 <br />
 
-### :heart_eyes: 기타1 - 가능한 매일 매일 & 가능한 최소단위 작업별로 Fork repo에 commit 해주세요. !!!가장 중요하게 봅니다!!!
-### :heart_eyes: 기타2 - repo root 경로에 본인 이름(영어)의 md 파일을 생성하고, Test에 쓰인 기술블로그를 간단하게 작성하세요
+### :heart_eyes: 기타1 - 가능한 매일 매일 & 가능한 최소단위 작업별로 Fork repo에 commit 해주세요.<br />!!!가장 중요하게 봅니다!!!
+### :heart_eyes: 기타2 - repo root 경로에 본인 이름(영어)의 md 파일을 생성하고,<br />Test에 쓰인 기술블로그를 간단하게 작성하세요
 <br />
 
 ---
