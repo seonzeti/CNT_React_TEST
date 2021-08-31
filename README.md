@@ -24,7 +24,7 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 
 ### 6. :ghost: 로그인 처리
 > [링크된 JSON](https://heronoah.github.io/CNT_Web_TEST_Ref/login/) 의 값을 이용해서 로그인 한 뒤,<br />
-> 우상단 메뉴에서 로그인 처리하는 Modal 을 만들고 기로그인 능을 넣어주세요
+> 우상단 메뉴에서 로그인 처리하는 Modal 을 만들고 기로그인 능을 넣어주세요.<br />
 > CRS + SPA 에서 새로고침에도 로그인이 유지되도록 해주세요.
 
 ### 7 :stopwatch: 작업이 완료되면 PR!
