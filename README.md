@@ -18,6 +18,7 @@ CNT_React_TEST(최종 업데이트 2021/06/01)
 > [링크된 JSON](https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/) 의 값을 Axios 로 가져와서 집어넣는다.
 
 ### 5. :floppy_disk: 4번에서 가져온 DATA를 상태관리 저장하세요(useState, Redux, Context, Recoil 종류 무관)
+> count 값을 버튼을 만들고 증가 혹은 감소 시키세요!(상태관리로 해주세요!)
 
 ### 6. :stopwatch: 작업이 완료되면 PR!
 
@@ -25,7 +26,7 @@ CNT_React_TEST(최종 업데이트 2021/06/01)
 
 <br />
 
-### :heart_eyes: 기타1 - 가능한 매일 매일 & 가능한 최소단위 작업별로 Fork repo에 commit 해주세요.
+### :heart_eyes: 기타1 - 가능한 매일 매일 & 가능한 최소단위 작업별로 Fork repo에 commit 해주세요. !!!가장 중요하게 봅니다!!!
 ### :heart_eyes: 기타2 - repo root 경로에 본인 이름(영어)의 md 파일을 생성하고, Test에 쓰인 기술블로그를 간단하게 작성하세요
 <br />
 
