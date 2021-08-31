@@ -6,7 +6,7 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 ### 1. :fork_and_knife: 현재 repo 를 Fork!
 > 이 Repo는 CRA로 되어있습니다.
 > React + 바벨or웹팩 으로 구성하셔도 상관없지만,<br />
-> CRA제외한 다른 프레임 워크는 지양해주세요.<br />
+> CRA 제외한 다른 프레임 워크는 지양해주세요.<br />
 > CRA 혹은 npm 의 버전은 자유롭게 설정 가능합니다.
 
 ### 2. :computer: [링크된 사이트](https://clone.cntcompany.site/)를 보고 클론코딩
@@ -22,7 +22,11 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 ### 5. :floppy_disk: 4번에서 가져온 DATA를 상태관리 저장하세요(useState, Redux, Context, Recoil 종류 무관)
 > 버튼을 만들어서 상태관리 되고있는 count 값을 증가/감소 시키세요!
 
-### 6. :stopwatch: 작업이 완료되면 PR!
+### 6. :ghost: 로그인 처리
+> [링크된 JSON](https://heronoah.github.io/CNT_Web_TEST_Ref/login/) 의 값을 이용해서 로그인 한 뒤,
+> CRS + SPA 에서 새로고침에도 로그인이 유지되도록 해주세요.
+
+### 7 :stopwatch: 작업이 완료되면 PR!
 
 ---
 
