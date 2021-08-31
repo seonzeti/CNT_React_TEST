@@ -6,7 +6,7 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 ### 1. :fork_and_knife: 현재 repo 를 Fork!
 > 이 Repo는 CRA로 되어있습니다.
 > React + 바벨or웹팩 으로 구성하셔도 상관없지만,<br />
-> CRA제외한 다른 프레임 워크는 지양해주세요
+> CRA제외한 다른 프레임 워크는 지양해주세요.<br />
 > CRA 혹은 npm 의 버전은 자유롭게 설정 가능합니다.
 
 ### 2. :computer: [링크된 사이트](https://cnt-web-test.herokuapp.com)를 보고 클론코딩
