@@ -9,7 +9,7 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 > CRA제외한 다른 프레임 워크는 지양해주세요.<br />
 > CRA 혹은 npm 의 버전은 자유롭게 설정 가능합니다.
 
-### 2. :computer: [링크된 사이트](https://cnt-web-test.herokuapp.com)를 보고 클론코딩
+### 2. :computer: [링크된 사이트](https://clone.cntcompany.site/)를 보고 클론코딩
 > 데모사이트 하단부에 클론코딩 컨벤션이 적혀 있습니다. 참고해주세요.
 
 ### 3. :iphone: 미디어 쿼리등을 활용하여 반응형 웹으로 제작(스마트폰, 태블릿, PC 3가지 버전)
@@ -20,7 +20,7 @@ CNT_React_TEST(최종 업데이트 2021/08/31)
 > [링크된 JSON](https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/) 의 값을 Axios 로 가져와서 집어넣는다.
 
 ### 5. :floppy_disk: 4번에서 가져온 DATA를 상태관리 저장하세요(useState, Redux, Context, Recoil 종류 무관)
-> 버튼을 만들어서 상태관리되어있는 count 값을 증가/감소 시키세요!
+> 버튼을 만들어서 상태관리 되고있는 count 값을 증가/감소 시키세요!
 
 ### 6. :stopwatch: 작업이 완료되면 PR!
 
