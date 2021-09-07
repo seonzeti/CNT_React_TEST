@@ -3,65 +3,53 @@ import axios from 'axios';
 
 
 
+
+
 const Major = memo (() => {
 
+  const [txt, setTxt] = useState({
+    title : "Hi, Let the games Begin",
+    description: "이 데모용 웹페이지는 Html로 만들어 졌습니다. React로 코딩해주세요! 오른쪽의 버튼을 누르면 Axios 된 값으로 이곳의 글자를 변경해주세요",
+    count : "0",
+  });
 
-    async function switchText() {
+  // const [count, setCount] = useState(0);
 
-      const [txt, setTxt] = useState({
-        text : "초기값 입니다",
-        desc: "초기값 2 입니다",
-    });
 
-    //   const connect = await axios.get('https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/')
-    //     .then(res => setTxt(res));
+  //데이터 가져오기 
+  const getTxt = async () => {
 
-    //   const data = JSON.stringify(connect);
-      
-    //   const obj = JSON.parse(data, (key,value) => {
-    //       return value;
-    //   });
-    
+    const TXT = await axios('https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/');
+    console.log(TXT.data)
+    setTxt(TXT.data)
 
-      // const connect = await axios.get('https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/');
-      // const data = JSON.stringify(connect);
-      
-      // const obj = JSON.parse(data, (key,value) => {
-      //     return value;
-      // });
-      
-      // console.log(obj.data['title']);
-      // console.log(obj.data['description']);
-      // console.log(obj.data['count']);      
+
+  }
 
 
 
-
+    async function SwitchText() {
+      getTxt();
 
     }
-
-
-    //"Hi, Let the games Begin"
-    //'이 데모용 웹페이지는 Html로 만들어 졌습니다. React로 코딩해주세요! 오른쪽의 버튼을 누르면 Axios 된 값으로 이곳의 글자를 변경해주세요'
-
-
 
 
     return (
   
       
       <><header>
-        {/* <h1>{txt.text}</h1> */}
+        <h1>{txt.title}</h1>
       </header><div>
           <p>
-            {/* {txt.desc} */}
+            {txt.description}
           </p>
+          <p>{txt.count}</p>
 
           <ul>
-            <li>
-              <a href="#" onClick={switchText}>
-                GET STARTED
-              </a>
+            <li>           
+              <button onClick={SwitchText}>Get Started</button>
+              {/* <button onClick={()=>setTxt.count(count+1)}>increase</button> */}
+
             </li>
           </ul>
 
