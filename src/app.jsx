@@ -1,7 +1,5 @@
-import React from 'react';
-import { useCallback } from 'react';
-import { useState } from 'react';
-// import axios from 'axios';
+import React, {useState, useEffect, useCallback }from 'react';
+import axios from 'axios';
 
 
 import Navbar from './components/navbar';
@@ -13,16 +11,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 
 
-
-
-
 const App = () => {
-
-    const getStarted = useCallback(text => {
-        console.log('들어오긴해?')
-        return null;
-
-    });
 
 
 
@@ -30,7 +19,7 @@ const App = () => {
 
         <>            
             <Navbar></Navbar>
-            <Major switchText = {getStarted}></Major>
+            <Major></Major>
             <Sections></Sections>
             <Inner ></Inner>
             <Form></Form>

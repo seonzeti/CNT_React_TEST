@@ -1,9 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { memo } from 'react';
 
-class Form extends PureComponent {
-render() {
-    return (
-      <form action="#">
+
+const Form = memo(props => {
+
+  const onSubmit = event => {
+    
+  }
+
+  return (
+    <form onSubmit={onSubmit}>
         <div className="fields">
           <div className="field half">
             <label>name</label>
@@ -25,8 +30,8 @@ render() {
         </ul>
 
       </form>
-    );
-  }
-}
+  );
+});
+
 
 export default Form;
