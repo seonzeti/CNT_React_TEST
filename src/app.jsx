@@ -2,6 +2,11 @@
 import React from 'react';
 // import axios from 'axios';
 import Navbar from './components/navbar';
+import Major from './components/major';
+import Sections from './components/sections';
+import Inner from './components/inner';
+import Contact from './components/contact';
+import Footer from './components/footer';
 
 
 // let title = "A responsive site template designed by HTML5 UP and released under the Creative Commons.";
@@ -30,9 +35,15 @@ const App = () => {
 
     return (
 
-        <>
+        <>            
             <Navbar></Navbar>
-        </>
+            <Major></Major>
+            <Sections></Sections>
+            <Inner></Inner>
+            <Contact></Contact>
+            <Footer></Footer>
+            
+            </>
 
 
     );
