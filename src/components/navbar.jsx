@@ -3,7 +3,9 @@ import React, { PureComponent } from 'react';
 class Navbar extends PureComponent {
 render() {
     return (
-      <><a className="logo">
+      <>
+      
+      <a className="logo">
         <strong>Connect</strong>
         <span>React 코딩테스트</span>
       </a>
