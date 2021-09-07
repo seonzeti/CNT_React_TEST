@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Major from './components/major';
 import Sections from './components/sections';
 import Inner from './components/inner';
+import Form from './components/form';
 import Contact from './components/contact';
 import Footer from './components/footer';
 
@@ -40,6 +41,7 @@ const App = () => {
             <Major></Major>
             <Sections></Sections>
             <Inner></Inner>
+            <Form></Form>
             <Contact></Contact>
             <Footer></Footer>
             
