@@ -18,6 +18,7 @@ const Major = memo(() => {
     setTxt(TXT.data);
   };
 
+  //버튼 클릭 시, Text를 바꿔주는 함수
   async function SwitchText() {
     getTxt();
   }

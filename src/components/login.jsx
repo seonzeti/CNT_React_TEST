@@ -1,13 +1,12 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const Login = memo(props => {
-  //보관할 초기 useState 설정
-
-  const [user, setUser] = useState({ id: "", pw: "", name: "" });
+function Login() {
+  const [inputId, setInputId] = useState("");
+  const [inputPw, setInputPw] = useState("");
   const [admin, setAdmin] = useState({ id: "", pw: "", name: "" });
 
-  //유저 데이터 가져오기
+  // admin data 가져오기
   const getAdmin = async () => {
     const Admin = await axios(
       "https://heronoah.github.io/CNT_Web_TEST_Ref/login/"
@@ -15,59 +14,61 @@ const Login = memo(props => {
     setAdmin(Admin.data);
   };
 
-  const onSubmit = event => {
-    //admin 자료 가져오기
-    getAdmin();
+  // input data 의 변화가 있을 때마다 value 값을 변경해서 useState 해준다
+  const handleInputId = e => {
+    setInputId(e.target.value);
+  };
 
-    //입력받은 값으로 user id, pw 를 세팅하고, 가져온 데이터 값과 비교해서 빠꾸시키깅
-    if (user.id == admin.id && user.pw == admin.pw) {
-      console.log("관리자입니다.");
+  const handleInputPw = e => {
+    setInputPw(e.target.value);
+  };
+
+  // login 버튼 클릭 이벤트
+  const onClickLogin = () => {
+    if (inputId == admin.id && inputPw == admin.pw) {
+      alert(admin.id + "님, 환영합니다.");
     } else {
-      console.log("휑.....틀렸어요잉.... ");
+      alert("관리자만 이용 가능합니다.");
     }
   };
 
-  return (
-    <>
-      <p>{admin.name}</p>
-
-      <button onClick={onSubmit}>데이터 들어오는지 확인하기</button>
-
-      {/* <form onSubmit={onSubmit}>
-        <div className="fields">
-          <div className="field half">
-            <label>
-              ID:
-              <input
-                type="text"
-                name="id"
-                value={user.id || ""}
-                onChange={onChange}
-              />
-            </label>
-            <br />
-          </div>
-          <div className="field half">
-            <label>
-              PW:
-              <input
-                type="password"
-                name="pw"
-                value={user.pw || ""}
-                onChange={onChange}
-              />
-            </label>
-          </div>
-        </div>
-
-        <ul>
-          <li>
-            <input type="submit" value="Login" />
-          </li>
-        </ul>
-      </form> */}
-    </>
+  // 페이지 렌더링 후 가장 처음 호출되는 함수
+  useEffect(
+    () => {
+      getAdmin();
+    },
+    // 페이지 호출 후 처음 한번만 호출될 수 있도록 [] 추가
+    []
   );
-});
+
+  return (
+    <div>
+      <h2>Login</h2>
+      <div>
+        <label>ID : </label>
+        <input
+          type="text"
+          name="input_id"
+          value={inputId}
+          onChange={handleInputId}
+        />
+      </div>
+      <div>
+        <label>PW : </label>
+        <input
+          type="password"
+          name="input_pw"
+          value={inputPw}
+          onChange={handleInputPw}
+        />
+      </div>
+      <div>
+        <button type="button" onClick={onClickLogin}>
+          Login
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default Login;
