@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react';
+import React, { memo } from 'react';
 
-class Footer extends PureComponent {
-render() {
-    return (
 
-        <><div>
+const Footer = memo(props => {
+
+return (
+<><div>
             <ul>
                 <li>twitter</li>
                 <li>facebook</li>
@@ -18,10 +18,9 @@ render() {
                     <li>Design <a href="#"> HTML5UP</a></li>
                 </ul>
             </div></>
+);
+});
 
-
-    );
-}
-}
 
 export default Footer;
+

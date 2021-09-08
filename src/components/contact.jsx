@@ -1,9 +1,10 @@
-import React, { PureComponent } from 'react';
+import React, { memo } from 'react';
 
-class Contact extends PureComponent {
-render() {
-    return (
-        <><section>
+
+const Contact = memo(props => {
+
+return (
+<><section>
             <div>
                 <span>
                 </span>
@@ -32,8 +33,9 @@ render() {
                     </a>
                 </div>
             </section></>
-    );
-}
-}
+);
+});
+
 
 export default Contact;
+

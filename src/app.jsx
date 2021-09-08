@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useCallback }from 'react';
-import axios from 'axios';
+
 
 
 import Navbar from './components/navbar';
@@ -9,6 +9,7 @@ import Inner from './components/inner';
 import Form from './components/form';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Login from './components/login';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <>            
             <Navbar></Navbar>
             <Major></Major>
+            <Login></Login>
             <Sections></Sections>
             <Inner ></Inner>
             <Form></Form>
