@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 
 import Navbar from "./components/navbar";
 import Major from "./components/major";
@@ -8,18 +8,21 @@ import Form from "./components/form";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Login from "./components/login";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <Navbar></Navbar>
-      <Major></Major>
-      <Login></Login>
-      <Sections></Sections>
-      <Inner></Inner>
-      <Form></Form>
-      <Contact></Contact>
-      <Footer></Footer>
+      <body>
+        <Navbar></Navbar>
+        <Major></Major>
+        <Login></Login>
+        <Sections></Sections>
+        <Inner></Inner>
+        <Form></Form>
+        <Contact></Contact>
+        <Footer></Footer>
+      </body>
     </>
   );
 };

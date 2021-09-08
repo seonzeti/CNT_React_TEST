@@ -4,6 +4,7 @@ import axios from "axios";
 function Login() {
   const [inputId, setInputId] = useState("");
   const [inputPw, setInputPw] = useState("");
+
   const [admin, setAdmin] = useState({ id: "", pw: "", name: "" });
 
   // admin data 가져오기
@@ -28,12 +29,27 @@ function Login() {
   // login 버튼 클릭 이벤트
   const onClickLogin = () => {
     if (inputId == admin.id && inputPw == admin.pw) {
+      // //Local Storage에 저장하기
+      window.localStorage.setItem("input_id", inputId);
+      window.localStorage.setItem("input_pw", inputPw);
       //login이 된 상태
-      alert(admin.id + "님, 환영합니다.");
+      alert(window.localStorage.getItem("input_id") + "님, 환영합니다.");
     } else {
-      //실패!
-      alert("관리자만 이용 가능합니다.");
+      //로그인 실패!
+      alert("잘못입력하셨습니다.");
     }
+
+    //입력 값 초기화
+    setInputId("");
+    setInputPw("");
+  };
+
+  const onClickLogout = () => {
+    window.localStorage.setItem("input_id", "");
+    window.localStorage.setItem("input_pw", "");
+    alert("즐거운 하루 보내세요");
+    //페이지를 재로딩해서 화면 변경
+    window.location.reload();
   };
 
   // 페이지 렌더링 후 가장 처음 호출되는 함수
@@ -47,7 +63,8 @@ function Login() {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2>{window.localStorage.getItem("input_id")}</h2>
+
       <div>
         <label>ID : </label>
         <input
@@ -69,6 +86,10 @@ function Login() {
       <div>
         <button type="button" onClick={onClickLogin}>
           Login
+        </button>
+
+        <button type="button" onClick={onClickLogout}>
+          Logout
         </button>
       </div>
     </div>
