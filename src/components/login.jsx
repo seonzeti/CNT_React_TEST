@@ -1,33 +1,28 @@
-import React, { memo } from 'react';
-
+import React, { memo } from "react";
 
 const Login = memo(props => {
+  const onSubmit = event => {};
 
-const onSubmit = event => {
-    
-}
-
-return (
+  return (
     <form onSubmit={onSubmit}>
-        <div className="fields">
+      <div className="fields">
         <div className="field half">
-            <label>name</label>
-            <input></input>
+          <label>name</label>
+          <input type="text"></input>
         </div>
         <div className="field half">
-            <label>email</label>
-        <input></input>
+          <label>password</label>
+          <input type="password"></input>
         </div>
+      </div>
 
-        </div>
-
-        <ul>
-        <li><input type="submit" value="Login"/></li>
-        </ul>
-
+      <ul>
+        <li>
+          <input type="submit" value="Login" />
+        </li>
+      </ul>
     </form>
-);
+  );
 });
-
 
 export default Login;
