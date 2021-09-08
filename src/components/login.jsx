@@ -11,6 +11,8 @@ function Login() {
     const Admin = await axios(
       "https://heronoah.github.io/CNT_Web_TEST_Ref/login/"
     );
+
+    //admin 값 세팅
     setAdmin(Admin.data);
   };
 
@@ -26,8 +28,10 @@ function Login() {
   // login 버튼 클릭 이벤트
   const onClickLogin = () => {
     if (inputId == admin.id && inputPw == admin.pw) {
+      //login이 된 상태
       alert(admin.id + "님, 환영합니다.");
     } else {
+      //실패!
       alert("관리자만 이용 가능합니다.");
     }
   };
@@ -37,7 +41,7 @@ function Login() {
     () => {
       getAdmin();
     },
-    // 페이지 호출 후 처음 한번만 호출될 수 있도록 [] 추가
+    // 처음 한번 호출될 수 있도록 []추가
     []
   );
 
