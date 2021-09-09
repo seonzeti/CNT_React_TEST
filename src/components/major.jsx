@@ -2,6 +2,7 @@ import React, { memo, useState } from "react";
 import axios from "axios";
 
 const Major = memo(() => {
+  console.log("첫번째");
   const [txt, setTxt] = useState({
     title: "Hi, Let the games Begin",
     description:
@@ -11,10 +12,24 @@ const Major = memo(() => {
 
   //데이터 가져오기
   const getTxt = async () => {
+    console.log("두번째");
     const TXT = await axios(
       "https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/"
     );
     setTxt(TXT.data);
+  };
+
+  const { title, description, count } = txt;
+
+  const IncreaseCount = e => {
+    // value = count + 1;
+    const { count, value } = e.target;
+    setTxt({
+      ...txt,
+      [count]: value + 1,
+    });
+
+    // console.log(txt.count);
   };
 
   //버튼 클릭 시, Text를 바꿔주는 함수
@@ -22,25 +37,14 @@ const Major = memo(() => {
     getTxt();
   }
 
-  // count를 내가 따로 빼지않고 불러온 데이터의 값을 이용해야함.. 수정수정
-  // 여기서 title, description은 그대로 둔 채로 count만 하고 싶은데
-  // 1)  setTxt.count(txt.count + 1); >> 함수가 아니라고 오류
-
-  const IncreaseCount = () => {
-    setTxt(txt.count + 1);
-    console.log(txt.count);
-    // 2) title, description 까지 같이 수정돼서 공백으로 처리 됨..
-    // >> 이 부분 부터 다시 !!
-  };
-
   return (
     <>
       <header>
-        <h1>{txt.title}</h1>
+        <h1>{title}</h1>
       </header>
       <div>
-        <p>{txt.description}</p>
-        <p>{txt.count}</p>
+        <p>{description}</p>
+        <p>{count}</p>
 
         <ul>
           <li>
