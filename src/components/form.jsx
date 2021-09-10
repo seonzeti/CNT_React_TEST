@@ -13,7 +13,7 @@ const Form = props => {
               <input></input>
             </div>
             <div className="field half">
-              <label>email</label>
+              <label>ID</label>
               <input></input>
             </div>
             <div className="field">

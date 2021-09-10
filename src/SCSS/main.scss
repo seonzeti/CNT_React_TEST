@@ -19,6 +19,10 @@ li {
   width: device-width;
 }
 
+a {
+  color: $color-2;
+}
+
 #banner {
   display: flex;
   background-color: $color-1;

@@ -82,16 +82,16 @@ function Login() {
             value={inputPw}
             onChange={handleInputPw}
           />
+        </div>
 
-          <div className="actions">
-            <button type="button" onClick={onClickLogin}>
-              Login
-            </button>
+        <div>
+          <button type="button" onClick={onClickLogin}>
+            Login
+          </button>
 
-            <button type="button" onClick={onClickLogout}>
-              Logout
-            </button>
-          </div>
+          <button type="button" onClick={onClickLogout}>
+            Logout
+          </button>
         </div>
       </div>
     </section>
