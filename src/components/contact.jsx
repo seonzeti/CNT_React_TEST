@@ -1,31 +1,31 @@
 import React from "react";
 
-const Contact = (props => {
+const Contact = props => {
   return (
     <>
-      <section id = "banner">
-      <div>
+      <section id="banner">
+        <div className="inner">
           <span></span>
           <h3>Email</h3>
           <a href="#">seonzeroticket@gmail.com</a>
         </div>
-        </section>
-        
-      <section id = "banner">
-        <div>
+      </section>
+      <section id="banner">
+        <div className="inner">
           <span></span>
           <h3>Phone</h3>
-          <a>010-3778-5741</a>
+          <a href="#">010-3778-5741</a>
         </div>
-   </section> <section id = "banner">
-        <div>
+      </section>
+      <section id="banner">
+        <div className="inner">
           <span></span>
           <h3>Address</h3>
-          <a>Somewhere Road #2 Namgu, Gwangju</a>
+          <a href="#">Somewhere Road #2 Namgu, Gwangju</a>
         </div>
-        </section>
+      </section>
     </>
   );
-});
+};
 
 export default Contact;

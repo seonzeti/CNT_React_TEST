@@ -22,10 +22,14 @@ const Major = () => {
   const { title, description, count } = txt;
 
   const IncreaseCount = () => {
-    setTxt({
-      ...txt,
-      count: count + 1,
-    });
+    if (txt.count == 0) {
+      alert("Get Started 작업 먼저 해주세요.");
+    } else {
+      setTxt({
+        ...txt,
+        count: count + 1,
+      });
+    }
 
     // console.log(txt.count);
   };
