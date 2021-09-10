@@ -1,9 +1,10 @@
-import React, { memo } from "react";
+import React from "react";
 
-const Footer = memo(props => {
+const Footer = (props => {
   return (
     <>
-      <fotter id="footer">
+    <section id="banner">
+     <footer id="footer">
         <div class="inner">
           <ul className="icons">
             <li>twitter</li>
@@ -21,7 +22,9 @@ const Footer = memo(props => {
             </li>
           </ul>
         </div>
-      </fotter>
+      </footer></section>
+
+     
     </>
   );
 });

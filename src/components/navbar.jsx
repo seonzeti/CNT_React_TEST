@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { useState } from "react";
 // import Modal from "react-modal";
 
 const Navbar = props => {

@@ -62,37 +62,39 @@ function Login() {
   );
 
   return (
-    <div>
-      <h2>{window.localStorage.getItem("input_id")}</h2>
+    <section id="banner" className="major">
+      <div className="inner">
+        <h2>{window.localStorage.getItem("input_id")}</h2>
 
-      <div>
-        <label>ID : </label>
-        <input
-          type="text"
-          name="input_id"
-          value={inputId}
-          onChange={handleInputId}
-        />
-      </div>
-      <div>
-        <label>PW : </label>
-        <input
-          type="password"
-          name="input_pw"
-          value={inputPw}
-          onChange={handleInputPw}
-        />
-      </div>
-      <div>
-        <button type="button" onClick={onClickLogin}>
-          Login
-        </button>
+        <div className="content">
+          <label>ID : </label>
+          <input
+            type="text"
+            name="input_id"
+            value={inputId}
+            onChange={handleInputId}
+          />
 
-        <button type="button" onClick={onClickLogout}>
-          Logout
-        </button>
+          <label>PW : </label>
+          <input
+            type="password"
+            name="input_pw"
+            value={inputPw}
+            onChange={handleInputPw}
+          />
+
+          <div className="actions">
+            <button type="button" onClick={onClickLogin}>
+              Login
+            </button>
+
+            <button type="button" onClick={onClickLogout}>
+              Logout
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

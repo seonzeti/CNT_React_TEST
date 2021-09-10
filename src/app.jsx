@@ -12,8 +12,9 @@ import Login from "./components/login";
 import "./main.scss";
 import "./SCSS/header.scss";
 import "./SCSS/footer.scss";
-import "./SCSS/major.scss";
+import "./SCSS/main.scss";
 import "./SCSS/button.scss";
+import "./SCSS/form.scss";
 
 const App = () => {
   return (

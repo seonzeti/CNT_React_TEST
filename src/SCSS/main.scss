@@ -1,9 +1,6 @@
 @import "./variables";
 
 #banner {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   background-color: $color-1;
   color: $color-2;
