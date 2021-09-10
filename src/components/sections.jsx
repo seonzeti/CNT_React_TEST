@@ -1,40 +1,78 @@
 import React from "react";
 
-const Sections = (props => {
+const Sections = props => {
   return (
     <>
-      <article id="banner">
-        <h3>
-          <a>Section1</a>
-        </h3>
-      </article>
-      <article id="banner">
-        <h3>
-          <a>Section2</a>
-        </h3>
-      </article>
-      <article id="banner">
-        <h3>
-          <a>Section3</a>
-        </h3>
-      </article>
-      <article id="banner">
-        <h3>
-          <a>Section4</a>
-        </h3>
-      </article>
-      <article id="banner">
-        <h3>
-          <a>Section5</a>
-        </h3>
-      </article>
-      <article id="banner">
-        <h3>
-          <a>Section6</a>
-        </h3>
-      </article>
+      {/* <section id="one" className="tiles">
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+        <article>
+          <span className="image">
+            <img src="#" alt="" />
+          </span>
+          <header className="major">
+            <h3>
+              <a href="#banner"></a>
+            </h3>
+            <p>Ipsum dolor sit amet</p>
+          </header>
+        </article>
+      </section> */}
     </>
   );
-});
+};
 
 export default Sections;

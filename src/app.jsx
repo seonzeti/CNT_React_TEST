@@ -15,6 +15,7 @@ import "./SCSS/footer.scss";
 import "./SCSS/main.scss";
 import "./SCSS/button.scss";
 import "./SCSS/form.scss";
+import "./SCSS/imgsetting.scss";
 
 const App = () => {
   return (

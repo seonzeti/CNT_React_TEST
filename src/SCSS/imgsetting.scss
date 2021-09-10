@@ -1,0 +1,13 @@
+@import "./variables";
+
+.tiles {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: #6fc3df;
+
+  border: 0;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Inner = (({ text, getStarted }) => {
+const Inner = ({ text, getStarted }) => {
   return (
     <>
       <section id="banner">
@@ -20,15 +20,13 @@ const Inner = (({ text, getStarted }) => {
             평가합니다. 협업을 하실 (Clean )CODE에 힘을 다 쏟아넣어주세요
           </p>
 
-          <ul>
-            <li>
-              <button>GET STARTED</button>
-            </li>
-          </ul>
+          <li>
+            <button>GET STARTED → </button>
+          </li>
         </header>
       </section>
     </>
   );
-});
+};
 
 export default Inner;

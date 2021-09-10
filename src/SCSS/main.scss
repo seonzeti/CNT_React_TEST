@@ -1,5 +1,23 @@
 @import "./variables";
 
+article,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+li {
+  list-style: none;
+  padding-left: 0px;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
 #banner {
   display: flex;
   background-color: $color-1;

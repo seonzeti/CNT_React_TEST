@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 const Major = () => {
@@ -41,12 +41,10 @@ const Major = () => {
             <p>{description}</p>
             <p>{count}</p>
 
-            <ul className="actions">
-              <li>
-                <button onClick={getTxt}>Get Started</button>
-                <button onClick={IncreaseCount}>increase</button>
-              </li>
-            </ul>
+            <li>
+              <button onClick={getTxt}>Get Started → </button>
+              <button onClick={IncreaseCount}>increase</button>
+            </li>
           </div>
         </div>
       </section>
