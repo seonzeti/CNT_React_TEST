@@ -45,10 +45,8 @@ const Major = () => {
             <p>{description}</p>
             <p>{count}</p>
 
-            <li>
-              <button onClick={getTxt}>Get Started → </button>
-              <button onClick={IncreaseCount}>increase</button>
-            </li>
+            <button onClick={getTxt}>Get Started → </button>
+            <button onClick={IncreaseCount}>increase</button>
           </div>
         </div>
       </section>

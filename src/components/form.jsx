@@ -22,11 +22,7 @@ const Form = props => {
             </div>
           </div>
 
-          <ul>
-            <li>
-              <input type="submit" className="button" value="SEND MESSAGE" />
-            </li>
-          </ul>
+          <input type="submit" className="button" value="SEND MESSAGE" />
         </form>
       </div>
     </section>

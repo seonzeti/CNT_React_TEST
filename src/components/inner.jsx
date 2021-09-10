@@ -20,9 +20,7 @@ const Inner = ({ text, getStarted }) => {
             평가합니다. 협업을 하실 (Clean )CODE에 힘을 다 쏟아넣어주세요
           </p>
 
-          <li>
-            <button>GET STARTED → </button>
-          </li>
+          <button type="button">GET STARTED → </button>
         </header>
       </section>
     </>

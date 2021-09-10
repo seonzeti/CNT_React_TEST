@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixin";
 
 form {
   margin: 0 0 2em 0;
@@ -7,7 +8,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% + 3em);
-    margin: 1.5em 0 0.2em 1.5em;
+    margin: 0 0.2em 1.5em;
     width: calc(100% - 0.75em);
     &.half {
       width: calc(50% - 0.75em);
@@ -50,5 +51,10 @@ input {
   outline: 0;
   padding: 0 1em;
   text-decoration: none;
-  width: calc(100% - 0.5em);
+}
+
+@include mobile {
+  input {
+    width: 100%;
+  }
 }

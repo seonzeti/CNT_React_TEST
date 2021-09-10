@@ -45,7 +45,7 @@ function Login() {
   };
 
   const onClickLogout = () => {
-    window.localStorage.setItem("input_id", "");
+    window.localStorage.setItem("input_id", "로그인이 필요한 서비스입니다.");
     window.localStorage.setItem("input_pw", "");
     alert("즐거운 하루 보내세요");
     //페이지를 재로딩해서 화면 변경
