@@ -8,7 +8,12 @@ import Form from "./components/form";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Login from "./components/login";
-import "./App.css";
+
+import "./main.scss";
+import "./SCSS/header.scss";
+import "./SCSS/footer.scss";
+import "./SCSS/major.scss";
+import "./SCSS/button.scss";
 
 const App = () => {
   return (

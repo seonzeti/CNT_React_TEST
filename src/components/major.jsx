@@ -1,7 +1,7 @@
 import React, { memo, useState } from "react";
 import axios from "axios";
 
-const Major = memo(() => {
+const Major = () => {
   console.log("첫번째");
   const [txt, setTxt] = useState({
     title: "Hi, Let the games Begin",
@@ -21,40 +21,37 @@ const Major = memo(() => {
 
   const { title, description, count } = txt;
 
-  const IncreaseCount = e => {
-    // value = count + 1;
-    const { count, value } = e.target;
+  const IncreaseCount = () => {
     setTxt({
       ...txt,
-      [count]: value + 1,
+      count: count + 1,
     });
 
     // console.log(txt.count);
   };
 
-  //버튼 클릭 시, Text를 바꿔주는 함수
-  async function SwitchText() {
-    getTxt();
-  }
-
   return (
     <>
-      <header>
-        <h1>{title}</h1>
-      </header>
-      <div>
-        <p>{description}</p>
-        <p>{count}</p>
+      <section id="banner" className="major">
+        <div className="inner">
+          <header className="major">
+            <h1>{title}</h1>
+          </header>
+          <div className="content">
+            <p>{description}</p>
+            <p>{count}</p>
 
-        <ul>
-          <li>
-            <button onClick={SwitchText}>Get Started</button>
-            <button onClick={IncreaseCount}>increase</button>
-          </li>
-        </ul>
-      </div>
+            <ul className="actions">
+              <li>
+                <button onClick={getTxt}>Get Started</button>
+                <button onClick={IncreaseCount}>increase</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
-});
+};
 
 export default Major;

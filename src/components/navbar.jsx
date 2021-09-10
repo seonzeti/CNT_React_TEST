@@ -1,19 +1,21 @@
 import React, { memo, useState } from "react";
 // import Modal from "react-modal";
 
-const Navbar = memo(props => {
+const Navbar = props => {
   return (
     <>
-      <a className="logo">
-        <strong>Connect</strong>
-        <span>React 코딩테스트</span>
-      </a>
+      <header id="header">
+        <a className="logo">
+          <strong>Connect</strong>
+          <span>React 코딩테스트</span>
+        </a>
 
-      <nav>
-        <span>로그인해주세요</span>
-      </nav>
+        <nav>
+          <span>로그인해주세요</span>
+        </nav>
+      </header>
     </>
   );
-});
+};
 
 export default Navbar;
