@@ -9,7 +9,6 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Login from "./components/login";
 
-import "./main.scss";
 import "./SCSS/header.scss";
 import "./SCSS/footer.scss";
 import "./SCSS/main.scss";
