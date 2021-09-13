@@ -28,7 +28,7 @@ function Login() {
 
   // login 버튼 클릭 이벤트
   const onClickLogin = () => {
-    if (inputId == admin.id && inputPw == admin.pw) {
+    if (inputId === admin.id && inputPw === admin.pw) {
       // //Local Storage에 저장하기
       window.localStorage.setItem("input_id", inputId);
       window.localStorage.setItem("input_pw", inputPw);
