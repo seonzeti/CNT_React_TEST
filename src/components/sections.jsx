@@ -27,6 +27,8 @@ const Sections = props => {
             <p>Ipsum dolor sit amet</p>
           </header>
         </article>
+      </section>{" "}
+      <section id="two" className="tiles">
         <article>
           <span className="image">
             <img src="#" alt="" />
@@ -49,6 +51,8 @@ const Sections = props => {
             <p>Ipsum dolor sit amet</p>
           </header>
         </article>
+      </section>{" "}
+      <section id="three" className="tiles">
         <article>
           <span className="image">
             <img src="#" alt="" />
