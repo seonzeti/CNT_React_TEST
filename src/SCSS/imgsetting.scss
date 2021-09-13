@@ -47,5 +47,25 @@
 }
 
 @include mobile {
-  //하나씩 하고싶은디.. 100
+  #one article:nth-child(1) {
+    width: 50%;
+  }
+
+  #one article:nth-child(2) {
+    width: 50%;
+  }
+  #two article:nth-child(1) {
+    width: 50%;
+  }
+
+  #two article:nth-child(2) {
+    width: 50%;
+  }
+  #three article:nth-child(1) {
+    width: 50%;
+  }
+
+  #three article:nth-child(2) {
+    width: 50%;
+  }
 }
