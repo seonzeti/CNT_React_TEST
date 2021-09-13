@@ -5,24 +5,20 @@ const Footer = props => {
     <>
       <section id="banner">
         <footer id="footer">
-          <div class="inner">
-            <ul className="icons">
-              <li>twitter</li>
-              <li>facebook</li>
-              <li>instagram</li>
-              <li>github</li>
-              <li>infrun</li>
-            </ul>
-          </div>
+          <ul className="icons">
+            <li>twitter</li>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>github</li>
+            <li>infrun</li>
+          </ul>
 
-          <div className="inner">
-            <ul>
-              <li>(주)커넥트</li>
-              <li>
-                Design <a href="#"> HTML5UP</a>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>(주)커넥트</li>
+            <li>
+              Design <a href="#"> HTML5UP</a>
+            </li>
+          </ul>
         </footer>
       </section>
     </>
