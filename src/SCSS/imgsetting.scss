@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixin";
 
 .tiles {
   bottom: 0;
@@ -8,47 +9,43 @@
   border: 0;
   box-sizing: inherit;
   height: 20em;
+  color: $color-2;
 }
 
 #one article:nth-child(1) {
   background-color: #6fc3df;
   width: 40%;
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 
 #one article:nth-child(2) {
   background-color: #8d82c4;
   width: 60%;
-
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 
 #two article:nth-child(1) {
   background-color: #ec8d81;
   width: 60%;
-
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 #two article:nth-child(2) {
   background-color: #e7b788;
   width: 40%;
-
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 
 #three article:nth-child(1) {
   background-color: #8ea9e8;
   width: 40%;
-
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 #three article:nth-child(2) {
   background-color: #87c5a4;
   width: 60%;
-
-  padding: 4em 3em 2em 3em;
+  padding: $section-padding;
 }
 
-// @include mobile {
-
-// }
+@include mobile {
+  //하나씩 하고싶은디.. 100
+}
