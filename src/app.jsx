@@ -19,16 +19,14 @@ import "./SCSS/section.scss";
 const App = () => {
   return (
     <>
-      <body>
-        <Navbar></Navbar>
-        <Major></Major>
-        <Sections></Sections>
-        <Login></Login>
-        <Inner></Inner>
-        <Form></Form>
-        <Contact></Contact>
-        <Footer></Footer>
-      </body>
+      <Navbar></Navbar>
+      <Major></Major>
+      <Sections></Sections>
+      <Login></Login>
+      <Inner></Inner>
+      <Form></Form>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 };
