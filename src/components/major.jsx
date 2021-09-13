@@ -41,7 +41,7 @@ const Major = () => {
           <header className="major">
             <h1>{title}</h1>
           </header>
-          <div className="content">
+          <div className="content" id="maincontent">
             <p>{description}</p>
             <p>{count}</p>
 

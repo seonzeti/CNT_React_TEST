@@ -15,7 +15,7 @@ import "./SCSS/footer.scss";
 import "./SCSS/main.scss";
 import "./SCSS/button.scss";
 import "./SCSS/form.scss";
-import "./SCSS/imgsetting.scss";
+import "./SCSS/section.scss";
 
 const App = () => {
   return (
@@ -23,8 +23,8 @@ const App = () => {
       <body>
         <Navbar></Navbar>
         <Major></Major>
-        <Login></Login>
         <Sections></Sections>
+        <Login></Login>
         <Inner></Inner>
         <Form></Form>
         <Contact></Contact>
