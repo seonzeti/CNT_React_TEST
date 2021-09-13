@@ -16,7 +16,7 @@ const Footer = props => {
           <ul>
             <li>(주)커넥트</li>
             <li>
-              Design <a href="#"> HTML5UP</a>
+              Design <a href="#!"> HTML5UP</a>
             </li>
           </ul>
         </footer>

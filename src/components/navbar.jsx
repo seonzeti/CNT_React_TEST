@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 // import Modal from "react-modal";
 
 const Navbar = props => {
   return (
     <>
       <header id="header">
-        <a className="logo">
+        <a href="#!" className="logo">
           <strong>Connect</strong>
           <span>React 코딩테스트</span>
         </a>
