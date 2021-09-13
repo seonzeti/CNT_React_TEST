@@ -10,6 +10,10 @@
   box-sizing: inherit;
   height: 20em;
   color: $color-2;
+
+  h3 {
+    font-size: 1.65em;
+  }
 }
 
 #one article:nth-child(1) {
