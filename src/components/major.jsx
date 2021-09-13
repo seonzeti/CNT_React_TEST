@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Major = () => {
-  console.log("첫번째");
+  // console.log("첫번째");
   const [txt, setTxt] = useState({
     title: "Hi, Let the games Begin",
     description:
@@ -12,7 +12,7 @@ const Major = () => {
 
   //데이터 가져오기
   const getTxt = async () => {
-    console.log("두번째");
+    // console.log("두번째");
     const TXT = await axios(
       "https://heronoah.github.io/CNT_Web_TEST_Ref/test-value/"
     );
